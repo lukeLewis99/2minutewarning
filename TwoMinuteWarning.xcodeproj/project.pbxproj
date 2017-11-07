@@ -12,6 +12,8 @@
 		5AA225C11F87CBB600F12185 /* MyAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA225C01F87CBB600F12185 /* MyAlarm.swift */; };
 		5AEC0DEC1F98A5D1000D7EDE /* AddCustomScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEC0DEB1F98A5D1000D7EDE /* AddCustomScheduleViewController.swift */; };
 		ACCC60541FB256470029DD90 /* editSchedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACCC60531FB256470029DD90 /* editSchedule.storyboard */; };
+		ACCC60571FB2585D0029DD90 /* home screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACCC60551FB2585D0029DD90 /* home screen.storyboard */; };
+		ACCC60591FB2588C0029DD90 /* launtch screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACCC60581FB2588C0029DD90 /* launtch screen.storyboard */; };
 		D43867E91F6808C00044FD57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43867E81F6808C00044FD57 /* AppDelegate.swift */; };
 		D43867EB1F6808C00044FD57 /* ChangeScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43867EA1F6808C00044FD57 /* ChangeScheduleViewController.swift */; };
 		D43867EE1F6808C00044FD57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D43867EC1F6808C00044FD57 /* Main.storyboard */; };
@@ -31,6 +33,8 @@
 		5AA225C01F87CBB600F12185 /* MyAlarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyAlarm.swift; path = TwoMinuteWarning/Model/MyAlarm.swift; sourceTree = SOURCE_ROOT; };
 		5AEC0DEB1F98A5D1000D7EDE /* AddCustomScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCustomScheduleViewController.swift; sourceTree = "<group>"; };
 		ACCC60531FB256470029DD90 /* editSchedule.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = editSchedule.storyboard; sourceTree = "<group>"; };
+		ACCC60561FB2585D0029DD90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "TwoMinuteWarning/View/Base.lproj/home screen.storyboard"; sourceTree = "<group>"; };
+		ACCC60581FB2588C0029DD90 /* launtch screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "launtch screen.storyboard"; sourceTree = "<group>"; };
 		D43867E51F6808C00044FD57 /* TwoMinuteWarning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwoMinuteWarning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D43867E81F6808C00044FD57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D43867EA1F6808C00044FD57 /* ChangeScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeScheduleViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +77,8 @@
 		156B226E1F756CE5004C5959 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				ACCC60581FB2588C0029DD90 /* launtch screen.storyboard */,
+				ACCC60551FB2585D0029DD90 /* home screen.storyboard */,
 				ACCC60531FB256470029DD90 /* editSchedule.storyboard */,
 				D43867F41F6808C00044FD57 /* LaunchScreen.storyboard */,
 				D43867EC1F6808C00044FD57 /* Main.storyboard */,
@@ -201,7 +207,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D43867F61F6808C00044FD57 /* LaunchScreen.storyboard in Resources */,
+				ACCC60571FB2585D0029DD90 /* home screen.storyboard in Resources */,
 				ACCC60541FB256470029DD90 /* editSchedule.storyboard in Resources */,
+				ACCC60591FB2588C0029DD90 /* launtch screen.storyboard in Resources */,
 				D43867F31F6808C00044FD57 /* Assets.xcassets in Resources */,
 				D43867EE1F6808C00044FD57 /* Main.storyboard in Resources */,
 			);
@@ -231,6 +239,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		ACCC60551FB2585D0029DD90 /* home screen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACCC60561FB2585D0029DD90 /* Base */,
+			);
+			name = "home screen.storyboard";
+			sourceTree = "<group>";
+		};
 		D43867EC1F6808C00044FD57 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
