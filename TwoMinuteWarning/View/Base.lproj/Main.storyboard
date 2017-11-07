@@ -108,6 +108,7 @@
                                             </subviews>
                                         </stackView>
                                     </subviews>
+                                    <color key="backgroundColor" red="0.45085787770000002" green="0.98829740290000001" blue="0.83763033149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="hF2-2n-dBw" secondAttribute="trailing" constant="20" id="0r1-eC-vCf"/>
                                         <constraint firstItem="hF2-2n-dBw" firstAttribute="leading" secondItem="8Ry-kH-hk4" secondAttribute="leading" constant="20" id="1VI-D4-HzY"/>
@@ -240,6 +241,8 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <color key="backgroundColor" red="0.45085787770000002" green="0.98829740290000001" blue="0.83763033149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="tintColor" red="0.45085787770000002" green="0.98829740290000001" blue="0.83763033149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstItem="HMV-vN-geW" firstAttribute="leading" secondItem="ERN-2q-tfF" secondAttribute="leading" constant="20" id="1gz-3U-hlD"/>
                                         <constraint firstItem="jKf-pe-R4s" firstAttribute="top" secondItem="ERN-2q-tfF" secondAttribute="top" constant="284" id="Ber-tY-Ybu"/>
