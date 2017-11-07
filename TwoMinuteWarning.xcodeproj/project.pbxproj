@@ -11,6 +11,7 @@
 		156B22711F758763004C5959 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156B22701F758763004C5959 /* Data.swift */; };
 		5AA225C11F87CBB600F12185 /* MyAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA225C01F87CBB600F12185 /* MyAlarm.swift */; };
 		5AEC0DEC1F98A5D1000D7EDE /* AddCustomScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEC0DEB1F98A5D1000D7EDE /* AddCustomScheduleViewController.swift */; };
+		ACCC60541FB256470029DD90 /* editSchedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACCC60531FB256470029DD90 /* editSchedule.storyboard */; };
 		D43867E91F6808C00044FD57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43867E81F6808C00044FD57 /* AppDelegate.swift */; };
 		D43867EB1F6808C00044FD57 /* ChangeScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43867EA1F6808C00044FD57 /* ChangeScheduleViewController.swift */; };
 		D43867EE1F6808C00044FD57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D43867EC1F6808C00044FD57 /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 		156B22701F758763004C5959 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		5AA225C01F87CBB600F12185 /* MyAlarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyAlarm.swift; path = TwoMinuteWarning/Model/MyAlarm.swift; sourceTree = SOURCE_ROOT; };
 		5AEC0DEB1F98A5D1000D7EDE /* AddCustomScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCustomScheduleViewController.swift; sourceTree = "<group>"; };
+		ACCC60531FB256470029DD90 /* editSchedule.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = editSchedule.storyboard; sourceTree = "<group>"; };
 		D43867E51F6808C00044FD57 /* TwoMinuteWarning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwoMinuteWarning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D43867E81F6808C00044FD57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D43867EA1F6808C00044FD57 /* ChangeScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeScheduleViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 		156B226E1F756CE5004C5959 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				ACCC60531FB256470029DD90 /* editSchedule.storyboard */,
 				D43867F41F6808C00044FD57 /* LaunchScreen.storyboard */,
 				D43867EC1F6808C00044FD57 /* Main.storyboard */,
 				15576DEF1F759ADF00F6D436 /* ScheduleModelPicker.swift */,
@@ -198,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D43867F61F6808C00044FD57 /* LaunchScreen.storyboard in Resources */,
+				ACCC60541FB256470029DD90 /* editSchedule.storyboard in Resources */,
 				D43867F31F6808C00044FD57 /* Assets.xcassets in Resources */,
 				D43867EE1F6808C00044FD57 /* Main.storyboard in Resources */,
 			);
