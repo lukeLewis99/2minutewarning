@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -19,6 +20,160 @@
         </array>
     </customFonts>
     <scenes>
+        <!--Choose a Schedule-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ChangeScheduleViewController" customModule="TwoMinuteWarning" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8j2-0b-4wC">
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Edit Schedule" id="MqR-GO-nXX">
+                                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="dVf-fn-Ies">
+                                            <color key="tintColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="backTapped:" destination="BYZ-38-t0r" id="KYE-Wj-LTc"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Save" id="3iS-zy-jfj">
+                                            <color key="tintColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="saveTapped:" destination="BYZ-38-t0r" id="eiu-uX-3t5"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nDE-yY-R0M">
+                                <rect key="frame" x="20" y="84" width="374" height="37"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Schedule:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2EE-C1-I6H">
+                                        <rect key="frame" x="0.0" y="0.0" width="133.66666666666666" height="37"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Not Set" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LkZ-He-2xL">
+                                        <rect key="frame" x="133.66666666666663" y="0.0" width="240.33333333333337" height="37"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xrh-8Z-isa">
+                                <rect key="frame" x="0.0" y="141" width="414" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="XMO-vs-3EP"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="0qr-gR-e25"/>
+                                </connections>
+                            </pickerView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ri1-V8-D4T">
+                                <rect key="frame" x="16" y="362" width="377" height="31"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Class Notification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jrb-ir-fOJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="328" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="right" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ugj-Ps-CqL">
+                                        <rect key="frame" x="328" y="0.0" width="51" height="31"/>
+                                        <color key="onTintColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="classNotificationSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="wzR-Mp-C0P"/>
+                                        </connections>
+                                    </switch>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YzY-Nh-Ue9">
+                                <rect key="frame" x="16" y="403" width="377" height="31"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Break Notification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y5f-LS-gxE">
+                                        <rect key="frame" x="0.0" y="0.0" width="328" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XSc-KP-EfZ">
+                                        <rect key="frame" x="328" y="0.0" width="51" height="31"/>
+                                        <color key="onTintColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="breakNotificationSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="hk4-eW-W9B"/>
+                                        </connections>
+                                    </switch>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="urH-Rj-Ffv">
+                                <rect key="frame" x="16" y="444" width="377" height="31"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dress Notification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sZd-QI-omP">
+                                        <rect key="frame" x="0.0" y="0.0" width="328" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yB8-Bg-wod">
+                                        <rect key="frame" x="328" y="0.0" width="51" height="31"/>
+                                        <color key="onTintColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="dressNotificationSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="liF-DE-Cot"/>
+                                        </connections>
+                                    </switch>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nDE-yY-R0M" firstAttribute="top" secondItem="8j2-0b-4wC" secondAttribute="bottom" constant="20" id="1XK-XZ-Fv5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nDE-yY-R0M" secondAttribute="trailing" id="2lb-Kq-KY4"/>
+                            <constraint firstItem="Xrh-8Z-isa" firstAttribute="top" secondItem="nDE-yY-R0M" secondAttribute="bottom" constant="20" id="3yM-vw-kHS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YzY-Nh-Ue9" secondAttribute="trailing" constant="1" id="Ba5-Qf-ncw"/>
+                            <constraint firstAttribute="trailing" secondItem="8j2-0b-4wC" secondAttribute="trailing" id="D05-kU-ZgR"/>
+                            <constraint firstItem="Xrh-8Z-isa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="H6F-MQ-1f7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="urH-Rj-Ffv" secondAttribute="trailing" constant="1" id="Hbe-IH-4nK"/>
+                            <constraint firstItem="YzY-Nh-Ue9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="IwT-LA-3Zq"/>
+                            <constraint firstItem="urH-Rj-Ffv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="MmY-s3-11G"/>
+                            <constraint firstItem="8j2-0b-4wC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="OMo-zX-3zK"/>
+                            <constraint firstItem="8j2-0b-4wC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="OxB-RG-ZmF"/>
+                            <constraint firstItem="Ri1-V8-D4T" firstAttribute="top" secondItem="Xrh-8Z-isa" secondAttribute="bottom" constant="5" id="Pcu-tu-I2g"/>
+                            <constraint firstItem="YzY-Nh-Ue9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="R2L-fb-INe"/>
+                            <constraint firstItem="urH-Rj-Ffv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="eEO-fg-ovO"/>
+                            <constraint firstAttribute="trailing" secondItem="Xrh-8Z-isa" secondAttribute="trailing" id="fNO-hV-lv3"/>
+                            <constraint firstItem="nDE-yY-R0M" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="hkw-az-ejt"/>
+                            <constraint firstItem="YzY-Nh-Ue9" firstAttribute="top" secondItem="Ri1-V8-D4T" secondAttribute="bottom" constant="10" id="inX-I4-sfF"/>
+                            <constraint firstItem="Ri1-V8-D4T" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="j3o-xa-atR"/>
+                            <constraint firstItem="urH-Rj-Ffv" firstAttribute="top" secondItem="YzY-Nh-Ue9" secondAttribute="bottom" constant="10" id="o0h-TF-OEa"/>
+                            <constraint firstItem="urH-Rj-Ffv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="okz-Tw-sFd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ri1-V8-D4T" secondAttribute="trailing" constant="1" id="sGD-tJ-1d2"/>
+                            <constraint firstItem="Ri1-V8-D4T" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="sRb-mw-pqP"/>
+                            <constraint firstItem="Ri1-V8-D4T" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="y7s-ag-idI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Choose a Schedule" id="Sve-Yn-pEb">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="skz-aO-PLZ"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="9Um-Wt-v5R"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="breakNotificationLabel" destination="y5f-LS-gxE" id="5yu-BW-Eb0"/>
+                        <outlet property="classNotificationLabel" destination="Jrb-ir-fOJ" id="zxo-CC-V10"/>
+                        <outlet property="currentSchedule" destination="LkZ-He-2xL" id="qu4-2f-kIv"/>
+                        <outlet property="dressNotificationLabel" destination="sZd-QI-omP" id="gtO-f9-pRv"/>
+                        <outlet property="schedulePicker" destination="Xrh-8Z-isa" id="OQq-f4-wTN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5672.4637681159429" y="79.076086956521749"/>
+        </scene>
         <!--On BoardVC-->
         <scene sceneID="v43-hE-mhO">
             <objects>
@@ -131,7 +286,7 @@
                     <connections>
                         <outlet property="currentSchedule" destination="8pL-rs-OXo" id="bTA-75-GZE"/>
                         <outlet property="timeLabel" destination="0ik-ze-3U0" id="4VY-LH-uVN"/>
-                        <segue destination="P35-cI-ABT" kind="presentation" identifier="toMain" modalTransitionStyle="flipHorizontal" id="fMO-4q-1i7"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="toMain" modalTransitionStyle="flipHorizontal" id="fMO-4q-1i7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HHd-HA-gQp" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -215,14 +370,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AXZ-HK-Xa3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3821.5999999999999" y="510.49475262368821"/>
-        </scene>
-        <!--edit schedule-->
-        <scene sceneID="iBc-ri-XBD">
-            <objects>
-                <viewControllerPlaceholder storyboardName="edit schedule" id="P35-cI-ABT" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="29h-hQ-rzM" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5672.4637681159429" y="79.076086956521749"/>
         </scene>
     </scenes>
     <resources>

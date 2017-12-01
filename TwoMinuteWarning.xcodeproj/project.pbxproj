@@ -10,12 +10,12 @@
 		15576DF01F759ADF00F6D436 /* ScheduleModelPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15576DEF1F759ADF00F6D436 /* ScheduleModelPicker.swift */; };
 		156B22711F758763004C5959 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156B22701F758763004C5959 /* Data.swift */; };
 		5AA225C11F87CBB600F12185 /* MyAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA225C01F87CBB600F12185 /* MyAlarm.swift */; };
+		AC65152E1FD1F7C700102EA3 /* edit schedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC65152C1FD1F7C700102EA3 /* edit schedule.storyboard */; };
 		D43867E91F6808C00044FD57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43867E81F6808C00044FD57 /* AppDelegate.swift */; };
 		D43867EB1F6808C00044FD57 /* ChangeScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43867EA1F6808C00044FD57 /* ChangeScheduleViewController.swift */; };
 		D43867EE1F6808C00044FD57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D43867EC1F6808C00044FD57 /* Main.storyboard */; };
 		D43867F11F6808C00044FD57 /* TwoMinuteWarning.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D43867EF1F6808C00044FD57 /* TwoMinuteWarning.xcdatamodeld */; };
 		D43867F31F6808C00044FD57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D43867F21F6808C00044FD57 /* Assets.xcassets */; };
-		D43867F61F6808C00044FD57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D43867F41F6808C00044FD57 /* LaunchScreen.storyboard */; };
 		D43868001F6809D40044FD57 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D43867FF1F6809D40044FD57 /* CloudKit.framework */; };
 		D45949001F6BF374004B0F9B /* ScheduleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45948FF1F6BF374004B0F9B /* ScheduleModel.swift */; };
 		D4B06EF91F77CE0100B27942 /* CSExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B06EF81F77CE0100B27942 /* CSExtention.swift */; };
@@ -27,13 +27,13 @@
 		15576DEF1F759ADF00F6D436 /* ScheduleModelPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleModelPicker.swift; sourceTree = "<group>"; };
 		156B22701F758763004C5959 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		5AA225C01F87CBB600F12185 /* MyAlarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyAlarm.swift; path = TwoMinuteWarning/Model/MyAlarm.swift; sourceTree = SOURCE_ROOT; };
+		AC65152D1FD1F7C700102EA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "TwoMinuteWarning/View/Base.lproj/edit schedule.storyboard"; sourceTree = "<group>"; };
 		D43867E51F6808C00044FD57 /* TwoMinuteWarning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwoMinuteWarning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D43867E81F6808C00044FD57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D43867EA1F6808C00044FD57 /* ChangeScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeScheduleViewController.swift; sourceTree = "<group>"; };
 		D43867ED1F6808C00044FD57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D43867F01F6808C00044FD57 /* TwoMinuteWarning.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TwoMinuteWarning.xcdatamodel; sourceTree = "<group>"; };
 		D43867F21F6808C00044FD57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D43867F51F6808C00044FD57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D43867F71F6808C00044FD57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D43867FD1F6808DB0044FD57 /* TwoMinuteWarning.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TwoMinuteWarning.entitlements; sourceTree = "<group>"; };
 		D43867FF1F6809D40044FD57 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
@@ -69,7 +69,7 @@
 		156B226E1F756CE5004C5959 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D43867F41F6808C00044FD57 /* LaunchScreen.storyboard */,
+				AC65152C1FD1F7C700102EA3 /* edit schedule.storyboard */,
 				D43867EC1F6808C00044FD57 /* Main.storyboard */,
 				15576DEF1F759ADF00F6D436 /* ScheduleModelPicker.swift */,
 			);
@@ -194,8 +194,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D43867F61F6808C00044FD57 /* LaunchScreen.storyboard in Resources */,
 				D43867F31F6808C00044FD57 /* Assets.xcassets in Resources */,
+				AC65152E1FD1F7C700102EA3 /* edit schedule.storyboard in Resources */,
 				D43867EE1F6808C00044FD57 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,20 +223,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		AC65152C1FD1F7C700102EA3 /* edit schedule.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC65152D1FD1F7C700102EA3 /* Base */,
+			);
+			name = "edit schedule.storyboard";
+			sourceTree = "<group>";
+		};
 		D43867EC1F6808C00044FD57 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				D43867ED1F6808C00044FD57 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D43867F41F6808C00044FD57 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D43867F51F6808C00044FD57 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
